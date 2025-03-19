@@ -24,6 +24,7 @@ pipeline {
             post {
                 success {
                     mail to: "baren.zemo02@gmail.com",
+                        subject: "helloooo"
                         body: "The Test stage has completed. Check logs for details."
                 }
             }
@@ -43,7 +44,8 @@ pipeline {
             }
             post {
                 always {
-                    mail to: "baren.zemo02@gmail.com"
+                    mail to: "baren.zemo02@gmail.com",
+                            subject: "Hello"
                              body: "The Security Scan stage has completed. Check logs for details."
                 }
             }

@@ -24,7 +24,6 @@ pipeline {
             post {
                 success {
                     mail to: "baren.zemo02@gmail.com",
-                        subject: "Jenkins: Test Stage - Completed",
                         body: "The Test stage has completed. Check logs for details."
                 }
             }
@@ -45,7 +44,6 @@ pipeline {
             post {
                 always {
                     mail to: "baren.zemo02@gmail.com"
-                    subject: "Jenkins: Security Scan - Completed",
                              body: "The Security Scan stage has completed. Check logs for details."
                 }
             }

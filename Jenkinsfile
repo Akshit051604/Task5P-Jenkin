@@ -33,6 +33,7 @@ pipeline {
         stage('Code Quality Check') {
             steps {
                 echo "Performing code quality check"
+                echo "Done"
             }
         }
 

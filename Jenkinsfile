@@ -12,8 +12,6 @@ pipeline {
             steps {
                 echo "Fetching the source code from ${DIRECTORY_PATH}"
                 echo "Compiling the code and generating artifacts"
-                echo "hello"
-                echo "what"
             }
         }
 
@@ -34,7 +32,6 @@ pipeline {
         stage('Code Quality Check') {
             steps {
                 echo "Performing code quality check"
-                echo "Done"
             }
         }
 

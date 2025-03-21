@@ -54,6 +54,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "Deploying the application to ${TESTING_ENVIRONMENT}"
+                echo "deployment Done."
             }
         }
 
